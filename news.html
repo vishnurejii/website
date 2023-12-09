@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onlmag.css">
+    <title>Online News Website</title>
+</head>
+<body>
+
+    <main>
+        <a href="login.html"><button onclick="location.href='/login'">login</button></a>
+
+    </main>
+    <header>
+        <a href="#"><img id="logo" src="logo.jpg"></a>
+
+        <h1>IndiaChronicle</h1>
+    </header>
+    <div id="datetime"></div>
+    </header>
+
+    <script>
+        function updateDateTime() {
+            const dateTimeElement = document.getElementById("datetime");
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const formattedDateTime = now.toLocaleDateString('en-US', options);
+            dateTimeElement.textContent = formattedDateTime;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+        });
+    </script>
+
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Politics</a>
+        <a href="index.html">Technology</a>
+        <a href="index.html">Science</a>
+        <a href="index.html">Entertainment</a>
+
+    </nav>
+
+
+        <article>
+            <img src="ai.jpg">
+            <h2>Microsoft hires former OpenAI CEO Sam Altman to lead new advanced AI research team</h2>
+            <p>Microsoft has hired OpenAI co-founders Sam Altman and Greg Brockman to lead a “new advanced AI research team,” Microsoft’s CEO Satya Nadella announced on Monday. The announcement comes hours after OpenAI’s board appointed former Twitch chief Emmett Shear as chief executive officer, defying calls from investors to reinstate the ousted Sam Altman, who co-founded the company in 2015.</p>
+            <a href="/article/1">Read More</a>
+        </article>
+
+        <article>
+            <img src="bitcoin.jpg" alt="News Image 2">
+            <h2>How close are crypto markets to first spot bitcoin, ether ETFs?</h2>
+            <p>A spate of filings for spot bitcoin and ether exchange-traded funds (ETFs), including from traditional finance heavyweights, has revived the crypto market that had been crushed by a series of meltdowns last year.
+
+                A spot crypto ETF would track the market price of the underlying crypto asset, giving investors exposure to the token without having to buy the currency. The SEC has previously denied all spot bitcoin ETF applications citing potential for fraud, but that could soon change after it lost a legal battle in August.</p>
+            <a href="/article/2">Read More</a>
+        </article>
+        <article>
+            <img src="growth.webp">
+            <h2>GDP growth to dip slightly to 6.3% in 2024, LS polls key factor: Report
+
+</h2>
+            <p>India's real GDP growth will decline marginally to 6.3 per cent in 2024 from the 6.4 per cent estimated for 2023, an American brokerage firm said on Monday.
+                The next calendar year will be of two halves, wherein the government spending before the upcoming General Elections will be the key driver for growth, while after the elections, it will be the re-acceleration in investment growth, especially from the private sector, Goldman Sachs said in a report.</p>
+            <a href="/article/2">Read More</a>
+        </article>
+        <article>
+            <img src="rbi.jpg" alt="News Image 2">
+            <h2>
+                RBI approves Hinduja Group directors on board of bankrupt Reliance Capital
+</h2>
+            <p>The Reserve Bank of India (RBI) has approved five Hinduja Group representatives as directors on the board of Reliance Capital, which is undergoing insolvency proceedings.
+                Sources said the directors are: Amar Chintopanth, Shardchandra V Zaregaonkar, Moses Newling Harding John, Bhumika Batra, and Arun Tiwari.</p>
+            <a href="/article/2">Read More</a>
+        </article>
+
+
+    </section>
+
+    <footer>
+        <p>Address:Lovely Professional University<br><br>Contact us:9995269028 <br><br>Email:indiachronicle@gmail.com</p>
+        <p1>&copy; 2023 Online Magazine. All rights reserved.</p1>
+        <p></p>
+    </footer>
+
+
+</body>
+</html>
